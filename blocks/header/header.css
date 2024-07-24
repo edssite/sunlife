@@ -148,7 +148,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 200px;
   height: auto;
 }
 
@@ -227,7 +227,7 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 2em;
     margin: 0;
-    font-size: var(--body-font-size-xs);
+    font-size: var(--body-font-size-m);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
@@ -272,4 +272,21 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+  display: flex;
+  justify-content: space-between; /* Optional: adjusts spacing between the items */
+}
+
+header nav .nav-tools .default-content-wrapper {
+  display: flex;
+  justify-content: space-between; /* Adjusts the space between the <p> elements */
+}
+
+header nav .nav-tools .default-content-wrapper p {
+  flex: 1; /* Allows the <p> elements to grow and shrink */
+  margin: 0 10px; /* Adds spacing between the <p> elements */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+header nav .nav-tools .default-content-wrapper .icon {
+  margin-top: -3px;
 }
