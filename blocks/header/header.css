@@ -174,8 +174,14 @@ header nav .nav-sections ul {
   font-weight: 500;
 }
 
+
+
 header nav .nav-sections ul > li {
   font-weight: 700;
+}
+
+header nav .nav-sections ul > li:hover {
+  border-bottom: 2px solid black;
 }
 
 header nav .nav-sections ul > li > ul {
