@@ -1,0 +1,74 @@
+
+/* Ensure .hero-flex container is positioned relative */
+.hero-flex {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center the content vertically if needed */
+    justify-content: center; /* Center the content horizontally if needed */
+  }
+  
+  /* Image container */
+  .hero-flex > div:first-child {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+  }
+  
+  /* Ensure picture element takes full width and height of the container */
+  .hero-flex > div:first-child > div > picture {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Text container */
+  .hero-flex > div:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Center the text content vertically */
+    justify-content: center; /* Center the text content horizontally */
+    z-index: 1; /* Ensure it is above the image */
+  }
+  
+  /* Text content styling */
+  .hero-flex > div:last-child > div {
+    text-align: left; /* Center the text */
+    color: white; /* Text color */
+  }
+  
+  .hero-flex > div:last-child > div h2 { 
+    color: white;
+    font-family: mignon;
+    font-size: xx-large;
+  }
+  
+  .hero-flex > div:last-child > div p { 
+    color: white;
+    width: 80%;
+    font-size: medium;
+  }
+  
+  .hero-flex > div:last-child > div .button-container a { 
+    color: white;
+  }
+  
+  .hero-flex > div:last-child > div .button-container a.button { 
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: #ffcb05; /* Set the background color to yellow */
+    color: #004570; /* Set the font color to green */
+    padding: 10px 20px; /* Add padding to make it rectangular */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the text */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bold; /* Make the text bold */
+    font-size: large;
+  }
+  
+  .hero-flex > div:last-child > div .button-container a.button:hover {
+    background-color: darkyellow; /* Optional: Change background color on hover */
+    color: darkgreen; /* Optional: Change font color on hover */
+  }
