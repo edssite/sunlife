@@ -1,0 +1,64 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.faq > div {
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
+
+.faq h3 {
+    background: #ffffff;
+    font-size: 22pt;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.faq-container {
+    margin-bottom: 25px;
+}
+.faq h3:hover {
+    background: #e7e6e6;
+    font-size: 22pt;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.faq h3::before {
+    content: '⌄';
+    margin-right: 10px;
+    transition: transform 0.1s;
+}
+
+.faq h3.active::before {
+    transform: rotate(180deg);
+}
+
+.faq p {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    margin: 0; /* Remove default margin */
+}
+
+.faq p:hover {
+    display: none;
+    padding: 10px;
+    background: #e7e6e6;
+    margin: 0; /* Remove default margin */
+}

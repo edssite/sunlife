@@ -184,6 +184,10 @@ header nav .nav-sections ul > li:hover {
   border-bottom: 2px solid black;
 }
 
+header nav .nav-sections ul > li:hover {
+  border-bottom: 2px solid black;
+}
+
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
 }

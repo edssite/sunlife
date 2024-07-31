@@ -1,31 +1,14 @@
-.yellow-banner { 
-    background-color: transparent;
+.plain-block-flex { 
+    display: flex;
 }
 
-.yellow-banner-container {
-    background-color: #fff8e0;
-}
-
-
-.plain {
-    background-color: white;
-}
-
-.yellow-banner > div > div > picture > img { 
-    margin-top: 35px;
-    width: 6%;
-}
-
-
-.yellow-banner > div:last-child { 
-    padding: 10px;
-}
-
-.yellow-banner > div > div > h2 {
+.plain-block-flex > div > div > h2 { 
     font-size: xx-large;
 }
 
-.yellow-banner > div > div .button-container a.button { 
+
+/* Yellow Action Button */
+.plain-block-flex > div > div > .button-container a.button { 
     display: inline-block; /* Make the anchor behave like a block-level element */
     background-color: #ffcb05; /* Set the background color to yellow */
     color: #004570; /* Set the font color to green */
@@ -38,7 +21,7 @@
     font-family: sans-serif;
 }
 
-.yellow-banner > div > div .button-container a.button:hover { 
+.plain-block-flex > div > div > .button-container a.button:hover { 
     display: inline-block; /* Make the anchor behave like a block-level element */
     background-color: #deb304; /* Set the background color to yellow */
     color: #004570; /* Set the font color to green */
@@ -51,7 +34,10 @@
     font-family: sans-serif;
 }
 
-.plain > div > div .button-container a.button { 
+
+
+/* Blue Link Button */
+.plain-block-flex > div > div > h3 { 
     display: inline-block; /* Make the anchor behave like a block-level element */
     background-color: white; /* Set the background color to white */
     color: #004570; /* Set the font color to #004570 */
@@ -65,7 +51,7 @@
     font-family: sans-serif;
 }
 
-.plain > div > div .button-container a.button:hover { 
+.plain-block-flex > div > div > h3:hover { 
     display: inline-block; /* Make the anchor behave like a block-level element */
     background-color: rgb(178, 214, 235); /* Set the background color to white */
     color: #004570; /* Set the font color to #004570 */
@@ -78,3 +64,4 @@
     font-size: large;
     font-family: sans-serif;
 }
+

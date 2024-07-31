@@ -1,0 +1,86 @@
+.health-banner {
+    background-image: url("../../icons/health-banner-pic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+.insurance-banner {
+    background-image: url("../../icons/insurance-banner-pic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+.hero-flex-health {
+    position: absolute;
+    top: 0;
+    left: 2;
+    width: 20%;
+    margin-left: 35%; /* 35% */
+    height: 100%;
+    display: flex;
+    align-items: center; /* Center the text content vertically */
+    justify-content: center; /* Center the text content horizontally */
+    z-index: 1; /* Ensure it is above the image */
+    background-color: rgb(15, 59, 66)
+}
+
+.hero-flex-insurance {
+    position: absolute;
+    top: 0;
+    left: 2;
+    width: 20%;
+    margin-left: 1%; /* Insurance block on the left */
+    height: 100%;
+    display: flex;
+    align-items: center; /* Center the text content vertically */
+    justify-content: center; /* Center the text content horizontally */
+    z-index: 1; /* Ensure it is above the image */
+    background-color: rgb(15, 59, 66)
+}
+
+
+.hero-flex-insurance > div > div,
+.hero-flex-health > div > div {
+    padding-left: 10px;
+}
+
+
+.hero-flex-insurance > div > div > h2,
+.hero-flex-health > div > div > h2 {
+    font-size: xx-large;
+    color: white;
+    font-family: mignon;
+}
+
+.hero-flex-insurance > div > div > p,
+.hero-flex-health > div > div > p {
+    color: white;
+    font-size: large;
+    width: 85%;
+}
+
+.hero-flex-insurance > div > div > .button-container a.button,
+.hero-flex-health > div > div > .button-container a.button {
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: #ffcb05; /* Set the background color to yellow */
+    color: #004570; /* Set the font color to green */
+    padding: 10px 20px; /* Add padding to make it rectangular */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the text */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bold; /* Make the text bold */
+    font-size: large;
+}
+
+
+.hero-flex-insurance > div > div > .button-container a.button:hover,
+.hero-flex-health > div > div > .button-container a.button:hover {
+    background-color: darkyellow; /* Optional: Change background color on hover */
+    color: darkgreen; /* Optional: Change font color on hover */
+  }

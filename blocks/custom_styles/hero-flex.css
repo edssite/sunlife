@@ -6,7 +6,7 @@
     align-items: center; /* Center the content vertically if needed */
     justify-content: center; /* Center the content horizontally if needed */
   }
-  
+
   /* Image container */
   .hero-flex > div:first-child {
     position: relative;

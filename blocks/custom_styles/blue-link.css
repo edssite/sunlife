@@ -1,0 +1,72 @@
+.blue-link > div > div > .button-container a.button,
+.blue-link > div > .button-container a.button {
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: white; /* Set the background color to yellow */
+    color: #004570; /* Set the font color to green */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bolder; /* Make the text bold */
+    font-size: large;
+    font-family: sans-serif;
+    text-align: left;
+    padding-left: 0px;
+    position: relative; /* For positioning the pseudo-element */
+}
+
+
+
+.blue-link > div > div > h2 {
+    font-size: xx-large;
+}
+
+.col-3 > div:not(:first-child) > div {
+    display: flex;
+    gap: 105px; /* Add space between the p elements */
+}
+
+.col-3 > div > div > p {
+    margin: 0; /* Reset any default margin */
+    padding: 0px; /* Add padding inside the p elements */
+    box-sizing: border-box; /* Ensure padding is included in the total width and height */
+}
+
+
+.blue-link > div > .button-container a.button:hover,
+.blue-link > div > div > .button-container a.button:hover {
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: white; /* Set the background color to yellow */
+    color: #004570; /* Set the font color to green */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bolder; /* Make the text bold */
+    font-size: large;
+    font-family: sans-serif;
+    text-align: left;
+    text-decoration: underline;
+    padding-left: 0px;
+    position: relative; /* For positioning the pseudo-element */
+}
+
+  /* Adding the circle and arrow using pseudo-element */
+  .blue-link > div > .button-container a.button::after,
+  .blue-link > div > div > .button-container a.button::after {
+    content: '→'; /* Unicode arrow character */
+    display: inline-block;
+    width: 20px; /* Width of the circle */
+    height: 20px; /* Height of the circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: white; /* Background color of the circle */
+    color: #004570; /* Color of the arrow */
+    text-align: center; /* Center the arrow in the circle */
+    line-height: 20px; /* Center the arrow vertically */
+    position: absolute; /* Position it absolutely */
+    right: 0; /* Position it at the right edge */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Center it vertically */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Hover effect for the pseudo-element */
+.blue-link > div > .button-container a.button:hover::after,
+.blue-link > div > div > .button-container a.button:hover::after {
+    background-color: #004570; /* Change background color on hover */
+    color: white; /* Change arrow color on hover */
+}

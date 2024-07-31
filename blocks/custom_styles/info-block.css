@@ -1,10 +1,14 @@
 
 .info-block > div > div > picture > img{
-    width: 13%;
+    width: 10%;
 }
 
 .info-block > div > div > h2 {
     font-size: xx-large;
+}
+
+.info-block {
+    width: 100%;
 }
 
 .info-block > div > div .button-container a.button { 
@@ -48,6 +52,66 @@
     color: white; /* Change arrow color on hover */
 }
 
+/* COL - 2 */
 .col-2 {
     display: flex;
+    justify-content: space-between;
+}
+
+.col-2 > div {
+    flex: 1;
+    border-left: 1px solid lightgrey;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-2 > div > div > h2 {
+    font-size: larger;
+}
+
+.col-2 > div:first-child {
+    border-left: none;
+}
+
+
+/* COL-4 */
+.col-4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Adjust the gap between flex items */
+}
+
+.col-4 > div {
+    flex: 1;
+    border-left: 1px solid lightgrey;
+    padding: 10px;  /* Adjusted padding */
+    margin: 0;           /* Removed margin */
+    max-width: 25%; /* Ensure each column takes up a maximum of 25% width */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.col-4 > div > div > h2 {
+    font-size: xx-large; /* Adjusted font size */
+}
+
+.col-4 > div > div > p {
+    font-size: large; /* Adjusted font size */
+}
+
+
+
+.col-4 > div:first-child {
+    border-left: none;
+    margin-left: 0; /* Ensure the first child has no left margin */
+}
+
+.col-4 > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-4 > div > div > h2, 
+.col-4 > div > div > p, 
+.col-4 > div > div > .button-container a {
+    width: 100%; /* Ensure internal elements do not exceed the parent width */
 }
