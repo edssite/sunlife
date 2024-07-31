@@ -12,12 +12,13 @@
 .img-left-blurb > div {
     flex: 1; /* Make each div take up an equal amount of space */
     display: flex;
+    gap: 3px;
     align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    justify-content: space-between; /* Center content horizontally */
 }
 
-.img-left-blurb picture {
-    max-width: 100%; /* Ensure the image does not overflow */
+.img-left-blurb picture img{
+    max-width: 90%; /* Ensure the image does not overflow */
     height: auto;
 }
 
