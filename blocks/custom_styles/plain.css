@@ -1,0 +1,67 @@
+.plain-block-flex { 
+    display: flex;
+}
+
+.plain-block-flex > div > div > h2 { 
+    font-size: xx-large;
+}
+
+
+/* Yellow Action Button */
+.plain-block-flex > div > div > .button-container a.button { 
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: #ffcb05; /* Set the background color to yellow */
+    color: #004570; /* Set the font color to green */
+    padding: 10px 20px; /* Add padding to make it rectangular */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the text */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bold; /* Make the text bold */
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.plain-block-flex > div > div > .button-container a.button:hover { 
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: #deb304; /* Set the background color to yellow */
+    color: #004570; /* Set the font color to green */
+    padding: 10px 20px; /* Add padding to make it rectangular */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the text */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bold; /* Make the text bold */
+    font-size: large;
+    font-family: sans-serif;
+}
+
+
+
+/* Blue Link Button */
+.plain-block-flex > div > div > h3 { 
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: white; /* Set the background color to white */
+    color: #004570; /* Set the font color to #004570 */
+    padding: 10px 20px; /* Add padding to make it rectangular */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the text */
+    border: 2px solid #004570; /* Add a border with the same color as the text */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bold; /* Make the text bold */
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.plain-block-flex > div > div > h3:hover { 
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: rgb(178, 214, 235); /* Set the background color to white */
+    color: #004570; /* Set the font color to #004570 */
+    padding: 10px 20px; /* Add padding to make it rectangular */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the text */
+    border: 2px solid #004570; /* Add a border with the same color as the text */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bold; /* Make the text bold */
+    font-size: large;
+    font-family: sans-serif;
+}
+

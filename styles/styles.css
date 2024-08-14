@@ -10,6 +10,16 @@
  * governing permissions and limitations under the License.
  */
 
+ @import url("../blocks/custom_styles/hero-flex.css");
+ @import url("../blocks/custom_styles/info-block.css");
+ @import url("../blocks/custom_styles/yellow-banner.css");
+ @import url("../blocks/custom_styles/blue-link.css");
+ @import url("../blocks/custom_styles/health-banner.css");
+ @import url("../blocks/custom_styles/plain.css");
+ @import url("../blocks/custom_styles/img-blurb.css");
+
+
+
 :root {
   /* colors */
   --link-color: #035fe6;
@@ -20,7 +30,7 @@
   --text-color: black;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: sunlife, 'Helvetica';
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -38,7 +48,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 94px;
 }
 
 @font-face {
@@ -203,12 +213,12 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  padding: 60px 16px;
 }
 
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 0px 32px;
   }
 }
 
@@ -222,5 +232,11 @@ main .section {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: white;
 }
+
+
+.flex-banner {
+  display: flex;
+}
+

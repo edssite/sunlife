@@ -1,19 +1,39 @@
 .cards > ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
-  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
+
 
 .cards > ul > li {
   border: 1px solid var(--dark-color);
-  background-color: var(--background-color);
+  background-color: white;
+  width: 100%;
+  transition: box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.cards > ul > li > .cards-card-body > h2 {
+  font-size: x-large;
+  transition: text-decoration 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.cards > ul > li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadowy border effect */
+}
+
+.cards > ul > li > .cards-card-body > h2:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.cards-card-body > p {
+  font-size: large;
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  margin: 14px;
 }
 
 .cards .cards-card-image {
@@ -28,4 +48,8 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+
+.cards-wrapper { 
 }

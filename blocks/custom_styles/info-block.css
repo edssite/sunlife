@@ -1,0 +1,117 @@
+
+.info-block > div > div > picture > img{
+    width: 10%;
+}
+
+.info-block > div > div > h2 {
+    font-size: xx-large;
+}
+
+.info-block {
+    width: 100%;
+}
+
+.info-block > div > div .button-container a.button { 
+    display: inline-block; /* Make the anchor behave like a block-level element */
+    background-color: white; /* Set the background color to yellow */
+    color: #004570; /* Set the font color to green */
+    border-radius: 0px; /* Optional: Add border radius to make the corners rounded */
+    font-weight: bolder; /* Make the text bold */
+    font-size: large;
+    font-family: sans-serif;
+    text-align: left;
+    padding-left: 0px;
+    position: relative; /* For positioning the pseudo-element */
+  }
+  
+  .info-block > div > div .button-container a.button:hover {   
+    text-decoration: underline;
+  }
+  
+  /* Adding the circle and arrow using pseudo-element */
+.info-block > div > div .button-container a.button::after {
+    content: '→'; /* Unicode arrow character */
+    display: inline-block;
+    width: 20px; /* Width of the circle */
+    height: 20px; /* Height of the circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: white; /* Background color of the circle */
+    color: #004570; /* Color of the arrow */
+    text-align: center; /* Center the arrow in the circle */
+    line-height: 20px; /* Center the arrow vertically */
+    position: absolute; /* Position it absolutely */
+    right: 0; /* Position it at the right edge */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Center it vertically */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Hover effect for the pseudo-element */
+.info-block > div > div .button-container a.button:hover::after {
+    background-color: #004570; /* Change background color on hover */
+    color: white; /* Change arrow color on hover */
+}
+
+/* COL - 2 */
+.col-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-2 > div {
+    flex: 1;
+    border-left: 1px solid lightgrey;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-2 > div > div > h2 {
+    font-size: larger;
+}
+
+.col-2 > div:first-child {
+    border-left: none;
+}
+
+
+/* COL-4 */
+.col-4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Adjust the gap between flex items */
+}
+
+.col-4 > div {
+    flex: 1;
+    border-left: 1px solid lightgrey;
+    padding: 10px;  /* Adjusted padding */
+    margin: 0;           /* Removed margin */
+    max-width: 25%; /* Ensure each column takes up a maximum of 25% width */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.col-4 > div > div > h2 {
+    font-size: xx-large; /* Adjusted font size */
+}
+
+.col-4 > div > div > p {
+    font-size: large; /* Adjusted font size */
+}
+
+
+
+.col-4 > div:first-child {
+    border-left: none;
+    margin-left: 0; /* Ensure the first child has no left margin */
+}
+
+.col-4 > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-4 > div > div > h2, 
+.col-4 > div > div > p, 
+.col-4 > div > div > .button-container a {
+    width: 100%; /* Ensure internal elements do not exceed the parent width */
+}

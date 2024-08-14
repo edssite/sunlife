@@ -9,7 +9,7 @@ main .hero-container {
 .hero {
   position: relative;
   padding: 32px;
-  min-height: 300px;
+  min-height: 370px;
 }
 
 .hero h1 {
@@ -25,6 +25,11 @@ main .hero-container {
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
+}
+
+
+.hero p {
+  width: 50%;
 }
 
 .hero img {
